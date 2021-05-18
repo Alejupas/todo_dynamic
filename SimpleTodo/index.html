@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo simple</title>
+    <style>
+      .del {
+        cursor: pointer;
+      }
+    </style>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <h1>Todo</h1>
+    <div class="input-container">
+      <input type="text" placeholder="Add Todo" id="todo-input" />
+      <button>Add Todo</button>
+    </div>
+    <ul class="list">
+      <li>
+        <span class="li-text">Buy milk</span>
+        <span class="del">&#x2612;</span>
+        <button class="edit">edit</button>
+      </li>
+      <li>Do sports <span class="del">&#x2612;</span></li>
+    </ul>
+  </body>
+</html>

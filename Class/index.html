@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./actions.js" defer></script>
+    <script src="./Todo.js" defer></script>
+    <script src="./app.js" defer></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="clear">
+          <i id="reset" class="fa fa-refresh"></i>
+        </div>
+        <p id="date" class="date">Kraunasi...</p>
+        <img class="img-fluid cover-img" src="./gold.jpg" alt="Cover image" />
+      </header>
+      <section class="content">
+        <ul id="list" class="list">
+          <li class="item line-through">
+            <i class="fa fa-check-circle make-done" aria-hidden="true"></i>
+            <span class="text">Drink coffe</span>
+            <i class="fa fa-pencil edit" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-icon" aria-hidden="true"></i>
+          </li>
+          <li class="item">
+            <i class="fa fa-circle-thin make-done" aria-hidden="true"></i>
+            <span class="text">Go to park</span>
+            <i class="fa fa-pencil edit" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-icon" aria-hidden="true"></i>
+          </li>
+          <li class="item">
+            <i class="fa fa-circle-thin make-done" aria-hidden="true"></i>
+            <span class="text">Walk a dog</span>
+            <i class="fa fa-pencil edit" aria-hidden="true"></i>
+            <i class="fa fa-trash delete-icon" aria-hidden="true"></i>
+          </li>
+        </ul>
+        <div class="add-item">
+          <i id="add-todo-btn" class="fa fa-plus-circle" aria-hidden="true"></i>
+          <input type="text" id="input" placeholder="Add todo" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
